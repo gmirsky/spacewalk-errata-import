@@ -5,7 +5,7 @@ Spacewalk CEFS and OVAL reporting data import script. This script imports data f
 
 ## SYNOPSIS
 
-**spacewalk-errata-import.sh [OPTION]... **
+**spacewalk-errata-import.sh -u [UID] -p [PASSWORD] -s [FQDN] [OPTION]... **
 
 **  -o, --output... [directory]**
 
