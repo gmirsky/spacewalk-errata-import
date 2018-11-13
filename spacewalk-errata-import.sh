@@ -204,7 +204,7 @@ fi
 # #get the lastest python script used to load the data into spacewalk from github.com
 #
 PL_FILE="${OUTPUT}/errata-import.pl"
-W_RTN=`wget --output-document=$PL_FILE --random-wait https://github.com/stevemeier/cefs/raw/master/errata-import.pl
+W_RTN=`wget --output-document=$PL_FILE --random-wait https://github.com/stevemeier/cefs/raw/master/errata-import.pl`
 if [[ $? -ne 0 ]]; then
  echo "wget of errata-import.pl failed"
  echo $W_RTN
