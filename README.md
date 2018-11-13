@@ -5,36 +5,36 @@ Spacewalk CEFS and OVAL reporting data import script. This script imports data f
 
 ## SYNOPSIS
 
-**spacewalk-errata-import.sh -u [UID] -p [PASSWORD] -s [FQDN] [OPTION]... **
+	**spacewalk-errata-import.sh -u [UID] -p [PASSWORD] -s [FQDN] [OPTION]...**
 
-**  -o, --output... [directory]**
+**-o, --output... [directory]**
 
-   Output directory where the downloaded data will be stored.
+Output directory where the downloaded data will be stored.
 
-**  -u, --userid... [userid]"**
+**-u, --userid... [userid]"**
 
    Spacewalk administrative user id used to import the data.
    [Mandatory]
 
-**  -p, --password... [password]**
+**-p, --password... [password]**
 
   Spacewalk administrative user id password for the user id
   to import the data. [Mandatory]
 
-**  -s, --spacewalk-server... [FQDN]**
+**-s, --spacewalk-server... [FQDN]**
 
   Spacewalk server Fully Qualified Domain Name
   Example: spacewalk.mydomain.com [Mandatory]
 
-**  -h, --help**
+**-h, --help**
 
   Display this help and exit.
 
-**  -v, --verbose**
+**-v, --verbose**
 
   Show all output to standard out.
 
-**  -d, --delete-old-files**
+**-d, --delete-old-files**
 
   Delete all previously downloaded files.
 
