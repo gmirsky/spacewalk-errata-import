@@ -217,5 +217,7 @@ chmod 755 $PL_FILE
 #
 # execute errata-import.pl to upload the data to the spacewalk server
 #
-./$PL_FILE --server $SPACEWALK_SERVER --errata $ERR_FILE --publish --rhsa-oval $RHSA_FILE
+export SPACEWALK_USER="${USERID}"
+export SPACEWALK_PASS="${PASSWORD}"
+$PL_FILE --server $SPACEWALK_SERVER --errata $ERR_FILE --publish --rhsa-oval $RHSA_FILE
 #
